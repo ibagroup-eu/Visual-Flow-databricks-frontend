@@ -1,0 +1,164 @@
+{
+  "DATETIME": [
+    {
+      "field": "function"
+    },
+    {
+      "field": "option.targetColumn"
+    },
+    {
+      "field": "option.sourceColumn",
+      "conditions": [
+        {
+          "function": "date_format"
+        },
+        {
+          "function": "to_date"
+        },
+        {
+          "function": "add_months"
+        },
+        {
+          "function": "date_add"
+        },
+        {
+          "function": "date_sub"
+        },
+        {
+          "function": "next_day"
+        },
+        {
+          "function": "year"
+        },
+        {
+          "function": "quarter"
+        },
+        {
+          "function": "month"
+        },
+        {
+          "function": "dayofweek"
+        },
+        {
+          "function": "dayofmonth"
+        },
+        {
+          "function": "dayofyear"
+        },
+        {
+          "function": "weekofyear"
+        },
+        {
+          "function": "last_day"
+        },
+        {
+          "function": "trunc"
+        },
+        {
+          "function": "hour"
+        },
+        {
+          "function": "minute"
+        },
+        {
+          "function": "second"
+        },
+        {
+          "function": "to_timestamp"
+        },
+        {
+          "function": "date_trunc"
+        },
+        {
+          "function": "to_unix_timestamp"
+        },
+        {
+          "function": "from_unixtime"
+        }
+      ]
+    },
+    {
+      "field": "option.format",
+      "conditions": [
+        {
+          "function": "date_format"
+        },
+        {
+          "function": "to_date"
+        },
+        {
+          "function": "trunc"
+        },
+        {
+          "function": "to_timestamp"
+        },
+        {
+          "function": "date_trunc"
+        },
+        {
+          "function": "to_unix_timestamp"
+        },
+        {
+          "function": "from_unixtime"
+        }
+      ]
+    },
+    {
+      "field": "option.numMonths",
+      "conditions": [
+        {
+          "function": "add_months"
+        }
+      ]
+    },
+    {
+      "field": "option.startColumn",
+      "conditions": [
+        {
+          "function": "datediff"
+        },
+        {
+          "function": "months_between"
+        }
+      ]
+    },
+    {
+      "field": "option.endColumn",
+      "conditions": [
+        {
+          "function": "datediff"
+        },
+        {
+          "function": "months_between"
+        }
+      ]
+    },
+    {
+      "field": "option.roundOff",
+      "conditions": [
+        {
+          "function": "months_between"
+        }
+      ]
+    },
+    {
+      "field": "option.dayOfWeek",
+      "conditions": [
+        {
+          "function": "next_day"
+        }
+      ]
+    },
+    {
+      "field": "option.days",
+      "conditions": [
+        {
+          "function": "date_add"
+        },
+        {
+          "function": "date_sub"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+    "name": {
+        "name": "Name",
+        "value": "Provide Stage name."
+    },
+    "description": {
+        "name": "Description",
+        "value1": "'Add/Update Column' stage gives the user an ability to perform the following operations with data:",
+        "value2": "1. Adding a new column to dataframe.",
+        "value3": "2. Changing value of an existing column. ",
+        "value4": "3. Deriving new column from an existing column.",
+        "value5": "4. Using conditions to provide column values.",
+        "value6": "5. Changing column data type.",
+        "value7": "6. Working with Window Functions.",
+        "value8": "7. Replacing column values that match the pattern with new ones, replace column values character by character, using conditions."
+    },
+    "operationType": {
+        "name": "Operation Type",
+        "boldText": "\uD835\uDC1B\uD835\uDC1A\uD835\uDC1C\uD835\uDC24\uD835\uDC2D\uD835\uDC22\uD835\uDC1C\uD835\uDC24(`)",
+        "value1": " 'deriveColumn' — create a new column from the existing one.",
+        "value2": " 'addConstant' — create a column with constant values.",
+        "value3": " 'changeType' — change column type.",
+        "value4": " 'renameColumn' — rename the column.",
+        "value5": " 'useConditions' — create a column with values that depend on some conditions.",
+        "value6": " 'useWindowFunction' — create a column with values obtained as a result of using the window function.",
+        "value7": " 'replaceValues' — replace column values that match the pattern with new ones.",
+        "value8": " 'replaceValuesUsingConditions' — replace values in the column using conditions.",
+        "value9": " 'replaceValuesCharByChar' — replace column values character by character."
+    },
+    "column": {
+        "name": "Column",
+        "value": "Specify column name."
+    }
+}

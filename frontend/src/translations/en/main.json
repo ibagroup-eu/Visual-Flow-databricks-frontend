@@ -1,0 +1,222 @@
+{
+    "title": "Visual Flow",
+    "Overview": "Overview",
+    "Jobs": "Jobs",
+    "job": "Job",
+    "Pipelines": "Pipelines",
+    "pipeline": "Pipeline",
+    "Import": "Import",
+    "Settings": "Settings",
+    "Basic": "Basic",
+    "Parameters": "Parameters",
+    "Users/Roles": "Users/Roles",
+    "Connections": "Connections",
+    "Exit": "Exit",
+    "jobDesigner": "Job Designer",
+    "search": "Search...",
+    "FileName": "File Name",
+    "Deleted": "Deleted successfully",
+    "Loading": "Loading...",
+    "Switch": "Switch projects",
+    "searchByName": "Search by Name...",
+    "searchByTags": "Filter by Tags...",
+    "reset": "Reset",
+    "tags": "Tags",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "noResult": "No result",
+    "sorted": {
+        "descending": "sorted descending",
+        "ascending": "sorted ascending"
+    },
+    "overview": {
+        "Jobs": "Jobs",
+        "Pipelines": "Pipelines",
+        "Utilization": "Resource Utilization",
+        "utilization": {
+            "Used": "Used",
+            "Requested": "Requested",
+            "Limits": "Limits"
+        }
+    },
+    "form": {
+        "header": {
+            "createProject": "Create Project",
+            "viewProject": "View Project",
+            "editProject": "Edit Project",
+            "viewProjectParameters": "View Project Parameters",
+            "editProjectParameters": "Edit Project Parameters",
+            "usersAndRoles": "Users and Roles",
+            "addUser": "Add User",
+            "Parameters": "Parameters",
+            "Export": "Export to",
+            "editProjectConnections": "Manage Connections",
+            "Connections": "Connections"
+        },
+        "Name": "Name",
+        "Description": "Description",
+        "Cloud": "Cloud",
+        "Host": "Databricks workspace URL",
+        "Token": "Personal access token",
+        "Path": "Path to Visual Flow files",
+        "Requests": "Requests",
+        "Limits": "Limits",
+        "DemoLimits": "Demo Limits",
+        "Limit": "Limit",
+        "Demo": "Demo",
+        "ExpirationDate": "ExpirationDate",
+        "SourceLimits": {
+            "read": "Source Limits: Read",
+            "write": "Source Limits: Write"
+        }
+    },
+    "button": {
+        "Save": "Save",
+        "Export": "Export",
+        "Browse": "Browse",
+        "Cancel": "Cancel",
+        "Exit": "Exit",
+        "Close": "Close",
+        "CLOSE": "CLOSE",
+        "Add": "ADD",
+        "addProperty": "ADD PROPERTY",
+        "setRole": "SET ROLE",
+        "addJob": "ADD JOB",
+        "addPipeline": "ADD PIPELINE",
+        "addUser": "ADD USER",
+        "ChooseFile": "CHOOSE FILE",
+        "Load": "LOAD",
+        "Import": "IMPORT",
+        "Confirm": "CONFIRM",
+        "Discard": "DISCARD",
+        "UseSchema": "Use Schema",
+        "EditSchema": "Edit Schema",
+        "AddConnection": "CREATE CONNECTION",
+        "AddParameter": "CREATE PARAMETER",
+        "AddOption": "Add option",
+        "Ping": "PING",
+        "CreateDataframe": "Create Dataframe",
+        "EditDataframe": "Edit Dataframe",
+        "AddValidation": "Add Validation",
+        "EditValidation": "Edit Validation",
+        "EditCluster": "Edit Cluster"
+    },
+    "validation": {
+        "3to40chars": "Wrong symbol or should be 3 to 40 characters long.",
+        "moreThen500": "Should be less then 500 characters long.",
+        "positive": "Should be positive.",
+        "multiple": "Should be multiple of {{multiple}}.",
+        "range": "Should be less than or equal to {{max}} and more or equal to {{min}}.",
+        "perTryLessTotalTimeout": "'Timeout per Try' value should be less then 'Total Timeout' value",
+        "minLessMax": "Min must be less than Max",
+        "validDate": "Should be valid date and more then current.",
+        "notBlank": "Should not be blank.",
+        "fieldsNotFilled": "Some fields are not filled.",
+        "incorrectJobLength": "The name should have a total length between 3 and 63 characters max.",
+        "incorrectPipelineLength": "The name should have a total length between 3 and 40 characters max.",
+        "incorrectCharacters": "Use alphanumeric characters, '-', '.' or '_'. Name must start and end with an alphanumeric.",
+        "pipelineWithoutJobParams": "Unable to run pipeline, missing job/parameter data.",
+        "projectParameters": {
+            "keyDuplication": "Key duplication",
+            "keyLength": "Length must be in range 1-50",
+            "keySymbols": "Only A-Z, a-z, 0-9, -, _ are allowed",
+            "keyStartEnd": "Must start and end with an alphanumeric character",
+            "valueEmpty": "Can’t be empty"
+        },
+        "projectConnections": {
+            "nameDuplication": "Name duplication",
+            "nameLength": "Length must be in range 1-50",
+            "nameSymbols": "Only A-Z, a-z, 0-9, -, _ are allowed"
+        },
+        "withColumnValidation": {
+            "range": "Value must be in range {{min}}-{{max}}.",
+            "integer": "Should be integer."
+        },
+        "kafkaValidation": {
+            "badCertificate": "Invalid certificate extension"
+        },
+        "pipelineWithEmpyJob": "The pipeline contains empty job(s), their execution will lead to an error.",
+        "host": "Should matches 'https://host' pattern",
+        "invalidJSONExtension": "The file extension must be json.",
+        "path": "Should to correspond /Volumes/catalog/schema/volume_path"
+    },
+    "confirm": {
+        "titleContinue": "Continue anyway?",
+        "title": "Are you sure?",
+        "body": "Are you sure?",
+        "Yes": "Yes",
+        "No": "No",
+        "sure": "Are you sure you want to delete",
+        "unsaved": "Are you sure? Unsaved changes will be lost"
+    },
+    "profileMenu": {
+        "profile": "Profile",
+        "logOut": "Log out"
+    },
+    "profilePage": {
+        "header": "User Profile",
+        "titles": {
+            "username": "Username:",
+            "fullName": "Full Name:",
+            "email": "Email:",
+            "authorizationToken": "Authorization Token:"
+        }
+    },
+    "404": "Sorry, we can’t find the page you are looking for.",
+    "unsavedChanges": {
+        "sidePanelIsDirty": "Your configuration has not been saved",
+        "paramsIsDirty": "Your parameters have not been saved",
+        "jobsGraphIsDirty": "Your job has not been saved. If you leave Job Designer unsaved changes will be lost. Press “SAVE”  to save your job",
+        "pipelinesGraphIsDirty": "Your pipeline has not been saved. If you leave Pipeline Designer unsaved changes will be lost. Press “SAVE”  to save your pipeline",
+        "leaveWithUnsavedChanges": "Unsaved changes will be lost"
+    },
+    "enterJobName": "Please enter name and save params",
+    "tooltip": {
+        "MoveDown": "Move down",
+        "MoveUp": "Move up",
+        "Delete": "Delete",
+        "Add": "Add",
+        "Refresh": "Refresh",
+        "AutoRefresh": "Auto Refresh",
+        "AutoRefreshOn": "Turn on auto refresh",
+        "AutoRefreshOff": "Turn off auto refresh"
+    },
+    "importPage": {
+        "FilePath": "File Path",
+        "LastUpdated": "Last Updated",
+        "BadFile": "Bad structure of file",
+        "importSuccess": "Resources import successful",
+        "importFailed": "Resources import failed",
+        "configType": {
+            "ConfigMap": "Job",
+            "WorkflowTemplate": "Pipeline"
+        },
+        "confirm": "Jobs (pipelines) with the same names will be overwritten.",
+        "Notice": "Notice:",
+        "NotAutorized": "You are not authorized for import within this project"
+    },
+    "error": {
+        "GUI": "GUI is absent. Possible reason: created via API."
+    },
+    "export": {
+        "note1": "Note: ",
+        "note2": "The file will be exported to the default folder set in your browser."
+    },
+    "history": {
+        "Started": "STARTED",
+        "Duration": "DURATION",
+        "RunBy": "RUN BY",
+        "Name": "NAME",
+        "Log": "LOG",
+        "EmptyList": "History is empty",
+        "LastRunBy": "Last Run by",
+        "Today": "Today",
+        "Yesterday": "Yesterday",
+        "At": "At"
+    },
+    "pagination": {
+        "of": "{{from}}-{{to}} of {{count}}",
+        "RowsPerPage": "Rows per page:",
+        "Rows": "Rows:"
+    }
+}

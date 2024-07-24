@@ -1,0 +1,507 @@
+{
+    "jobTitle": "Job Designer - {{name}}",
+    "pipelineTitle": "Pipeline Designer - {{name}}",
+    "PALETTE": "PALETTE",
+    "PARAMS": "PARAMS",
+    "Parameter": "Parameter",
+    "untitled": "Untitled*",
+    "palette": {
+        "READ": "Read",
+        "WRITE": "Write",
+        "JOIN": "Join",
+        "GROUP": "Group By",
+        "REMOVE_DUPLICATES": "Remove\nDuplicates",
+        "FILTER": "Filter",
+        "TRANSFORM": "Transformer",
+        "UNION": "Union",
+        "CDC": "Change\nData Capture",
+        "JOB": "Job",
+        "PIPELINE": "Pipeline",
+        "WAIT": "Wait",
+        "NOTIFICATION": "Notification",
+        "CONTAINER": "Container",
+        "CACHE": "Cache",
+        "SLICE": "Slice",
+        "PIVOT": "Pivot",
+        "SORT": "Sort",
+        "STRING": "String\nFunctions",
+        "VALIDATE": "Validate",
+        "WITH_COLUMN": "Add/Update\nColumn",
+        "DATETIME": "Date/Time",
+        "HANDLE_NULL": "Drop/Fill\nNulls",
+        "AI_TEXT_TASK": "AI Text Task"
+    },
+    "readConfiguration": {
+        "Name": "Name",
+        "Storage": "Storage",
+        "writeMode": "Write mode",
+        "anonymousAccess": "Anonymous access",
+        "customSql": "Custom SQL",
+        "optiondbtable": "SQL statement",
+        "authType": "Authentication type",
+        "iamApiKey": "IAM api key",
+        "iamServiceId": "IAM service id",
+        "endpoint": "Endpoint",
+        "accessKey": "Access key",
+        "secretKey": "Secret key",
+        "bucket": "Bucket",
+        "path": "Path in bucket",
+        "volume": "Volume",
+        "volumePath": "Path",
+        "jdbcUrl": "JDBC URL",
+        "user": "User",
+        "username": "Username",
+        "password": "Password",
+        "schema": "Schema",
+        "table": "Table",
+        "certData": "Certificate data",
+        "Fileformat": "File format",
+        "port": "Port",
+        "ssl": "SSL",
+        "nodes": "Nodes",
+        "index": "Index",
+        "database": "Database",
+        "collection": "Collection",
+        "host": "Host",
+        "keyspace": "Keyspace",
+        "pushdownEnabled": "Push down enabled",
+        "cluster": "Cluster (optional)",
+        "model": "Model",
+        "keyColumn": "Key column",
+        "readMode": "Read mode",
+        "keysPattern": "Keys pattern",
+        "binary": "Binary",
+        "hash": "Hash",
+        "ttl": "TTL",
+        "extraCopyOptions": "Extra copy options",
+        "query": "Query",
+        "quantity": "Quantity",
+        "tableName": "Table name",
+        "truncateMode": "Truncate mode",
+        "Type": "Type",
+        "SchemaRead": "Schema on read",
+        "filePath": "File Path",
+        "fileName": "File Name",
+        "file": "File",
+        "subscribe": "Topic Name",
+        "truststore": "Certificate (optional)",
+        "catalog": "Catalog",
+        "objectType": "Object Type",
+        "mergeSchema": "Merge schema",
+        "timestampAsOf": "Table version timestamp",
+        "versionAsOf": "Table version",
+        "replaceWhere": "Replace where",
+        "sessionInitStatement": "Session init statement",
+        "readingInParallel": "Reading in parallel",
+        "partitionColumn": "Partition column",
+        "lowerBound": "Lower bound",
+        "upperBound": "Upper bound",
+        "numPartitions": "Number of partitions",
+        "fetchsize": "Fetch size",
+        "customSchema": "Custom schema",
+        "createTableOptions": "Create table options",
+        "createTableColumnTypes": "Create table column types",
+        "pathGlobFilter": "Path glob filter",
+        "recursiveFileLookup": "Recursive file lookup",
+        "modifiedBefore": "Modified before timestamp",
+        "modifiedAfter": "Modified after timestamp",
+        "fileSelection": "File selection",
+        "useCompression": "Compression",
+        "compression": "Compression codec",
+        "samplingRatio": "Sampling ratio",
+        "containerPath": "Path in container",
+        "container": "Container",
+        "storageAccount": "Storage account",
+        "storageAccountKey": "Storage account key",
+        "SASToken": "SAS token",
+        "pathToKeyFile": "Path to JSON key file",
+        "prepareQuery": "Prepare query",
+        "wholetext": "Whole text",
+        "quote": "Quote character",
+        "escape": "Escape character",
+        "inferSchema": "Schema inference",
+        "enforceSchema": "Schema enforcement",
+        "fineTuneValues": "Fine-tune values",
+        "ignoreLeadingWhiteSpace": "Ignore leader white space",
+        "ignoreTrailingWhiteSpace": "Ignore trailing white space",
+        "nullValue": "Null value",
+        "nanValue": "Non-number value",
+        "binaryFormat": "Binary format",
+        "outputContentColumn": "Output content column",
+        "outputPathColumn": "Output path column",
+        "apiKey": "API key"
+    },
+    "writeConfiguration": {
+        "Header": "Header",
+        "Delimiter": "Delimiter",
+        "PartitionBy": "Partition By",
+        "overwriteSchema": "Overwrite schema",
+        "maxRecordsPerFile": "Max records per file",
+        "batchsize": "Batch size",
+        "quoteAll": "Quote all",
+        "escapeQuotes": "Escape quotes"
+    },
+    "unionConfiguration": {
+        "Name": "Name",
+        "Mode": "Mode",
+        "all": "All values",
+        "distinct": "Distinct"
+    },
+    "groupByConfiguration": {
+        "GroupBy": "Group By",
+        "DropGroupingColumns": "Drop grouping columns",
+        "AggregateFunctions": "Aggregate functions"
+    },
+    "edgeConfiguration": {
+        "Successpath": "Success path"
+    },
+    "joinConfiguration": {
+        "Name": "Name",
+        "JoinType": "Join type",
+        "LinkOrdering": "Link Ordering",
+        "Left": "Left",
+        "Right": "Right",
+        "Key": "Key"
+    },
+    "sliceConfiguration": {
+        "Name": "Name",
+        "Mode": "Mode",
+        "Columns": "Columns",
+        "keep": "Keep",
+        "drop": "Drop"
+    },
+    "pivotConfiguration": {
+        "Name": "Name",
+        "operationType": "Operation Type",
+        "option": {
+            "groupBy": "GroupBy",
+            "pivotColumns": "Pivot Columns",
+            "unpivotColumns": "Unpivot Columns",
+            "unpivotNames": "Unpivot Names",
+            "unchangedColumns": "Unchanged Columns",
+            "pivotValues": "Pivot Values",
+            "aggregation": "Aggregate function and Column"
+        },
+        "pivot": "pivot",
+        "unpivot": "unpivot",
+        "aggregation": "Aggregate function and Column"
+    },
+    "stringFunctionsConfiguration": {
+        "Name": "Name",
+        "OperationType": "Operation Type",
+        "SourceColumn": "Source Column",
+        "TargetColumn": "Target Column",
+        "Separator": "Separator",
+        "Charset": "Charset for decode",
+        "FormatNumber": "Decimal Places",
+        "FormatString": "Printf-style String",
+        "Substring": "Substring searched for",
+        "Position": "Position",
+        "Length": "Length",
+        "Pad": "String placeholder",
+        "Regex": "Regex string for searching",
+        "Limit": "Limit",
+        "trimString": "Character string for trim",
+        "groupIndex": "Ingex of regex group",
+        "RepeatNumber": "Number of repetitions",
+        "Delimiter": "Delimiter",
+        "Count": "Count"
+    },
+    "RemoveDuplConfiguration": {
+        "Key": "Key",
+        "OrderBy": "Order By"
+    },
+    "CDCConfiguration": {
+        "Name": "Name",
+        "LinkOrdering": "Link Ordering",
+        "After": "After",
+        "Before": "Before",
+        "Key": "Key",
+        "Mode": "Mode"
+    },
+    "transformConfiguration": {
+        "Name": "Name",
+        "Output": "Output",
+        "Placeholder": "column_name AS alias_name",
+        "Mode": "Mode",
+        "simple": "Simple",
+        "fullSql": "Full SQL",
+        "tableName": "Table name"
+    },
+    "filterConfiguration": {
+        "Name": "Name",
+        "Filter": "Filter"
+    },
+    "notificationConfiguration": {
+        "Name": "Name",
+        "Addressees": "To",
+        "Message": "Message"
+    },
+    "cacheConfiguration": {
+        "Name": "Name",
+        "useDisk": "Use disk",
+        "useMemory": "Use memory",
+        "useOffHeap": "Use off heap",
+        "deserialized": "Deserialized",
+        "replication": "Replication"
+    },
+    "sortConfiguration": {
+        "Name": "Name",
+        "SortType": "Sort type",
+        "OrderColumns": "Order columns"
+    },
+    "withColumnConfiguration": {
+        "Name": "Name",
+        "operationType": "Operation Type",
+        "Column": "Column",
+        "expression": "Expression",
+        "columnType": "Column Type",
+        "constant": "Constant",
+        "columnName": "Column Name",
+        "conditions": "Conditions",
+        "otherwise": "Otherwise",
+        "windowFunction": "Window Function",
+        "orderBy": "Order By",
+        "partitionBy": "Partition By",
+        "column": "Columns",
+        "n": "Number of buckets",
+        "offset": "Offset",
+        "defaultValue": "Default Value",
+        "deriveColumn": "deriveColumn",
+        "addConstant": "addConstant",
+        "changeType": "changeType",
+        "renameColumn": "renameColumn",
+        "useConditions": "useConditions",
+        "useWindowFunction": "useWindowFunction"
+    },
+    "kafkaConfiguration": {
+        "bootstrapServers": "Kafka Bootstrap Server URLs",
+        "hint": "Enter a comma-separated list of bootstrap server URLs including the port number.",
+        "option.kafka.ssl.truststore.location": "File path",
+        "configureOptions": "Configure Options",
+        "editOptions": "Edit Options",
+        "options": "Options"
+    },
+    "Zoom": {
+        "Zoom": "Zoom",
+        "In": "Zoom in",
+        "Out": "Zoom out",
+        "Restore": "Restore",
+        "Select": "Select",
+        "Move": "Move"
+    },
+    "dateTimeConfiguration": {
+        "operationType": "Operation Type",
+        "option": {
+            "sourceColumn": "Source Column",
+            "targetColumn": "Target Column",
+            "format": "Date Format",
+            "numMonths": "Number of Months",
+            "days": "Number of Days",
+            "startColumn": "Start Date Column",
+            "endColumn": "End Date Column",
+            "roundOff": "Round Off",
+            "dayOfWeek": "Day of Week"
+        }
+    },
+    "handleNullConfiguration": {
+        "Mode": "Mode",
+        "DropType": "Drop Type",
+        "DropChoice": "Drop Choice",
+        "DropColumns": "Drop Columns",
+        "fillValueType": "Fill Value Type",
+        "fillChoice": "Fill Choice",
+        "fillValues": "Fill Values",
+        "fillColumns": "Fill Columns",
+        "fillStrategy": "Fill Strategy",
+        "DROP": "Drop",
+        "fill": "Fill",
+        "fillNulls": "Fill nulls"
+    },
+    "aiConfiguration": {
+        "Task": "Task",
+        "LlmConnection": "LLM Connection",
+        "Llm": "LLM",
+        "LlmEndpoint": "LLM endpoint",
+        "ModelName": "Model name",
+        "ApiKey": "API key",
+        "SourceColumn": "Source column",
+        "NumberOfRecords": "Number of records",
+        "OutputColumn": "Output column",
+        "BasicSettings": "Basic settings",
+        "MaxResponce": "Max responce (tokens)",
+        "Temperature": "Temperature",
+        "AddPrompt": "Add Prompt",
+        "EditPrompt": "Edit Prompt",
+        "PathColumn": "Path Column",
+        "modal": {
+            "Title": "Prompting",
+            "SystemMessage": "System message",
+            "Attributes": "Attributes",
+            "KeepExtraAttributes": "Keep extra attributes",
+            "Name": "Name",
+            "Definition": "Definition",
+            "Placeholder": "Placeholder",
+            "ConfidenceThreshold": "Confidence Threshold",
+            "User": "User",
+            "Assistant": "Assistant",
+            "UserMessage": "User message",
+            "AddAttribute": "Add Attribute",
+            "AddExample": "Add Example"
+        }
+    },
+    "Path": "Path",
+    "Configuration": "Configuration",
+    "STAGE": "STAGE",
+    "Column": "Column",
+    "Value": "Value",
+    "Function": "Func",
+    "avroSchema": {
+        "useSchema": {
+            "name": "Schema"
+        },
+        "modal": {
+            "title": "Avro schema"
+        },
+        "fields": {
+            "name": "Name",
+            "type": "Type",
+            "nullable": "Nullable"
+        },
+        "validation": {
+            "duplicatedRow": "Duplicated row"
+        },
+        "search": {
+            "placeholder": "Search ..."
+        }
+    },
+    "clusterSchema": {
+        "fields": {
+            "key": "Ключ",
+            "value": "Значение",
+            "source": "Источник",
+            "filePath": "Файловый путь",
+            "region": "Регион"
+        },
+        "validation": {
+            "volumesError": "VOLUMES путь должен начинаться с /Volumes/ или dbfs:/Volumes/",
+            "sThreeError": "S3 путь должен начинаться с s3://",
+            "dbfsError": "DBFS путь должен начинаться с dbfs:/",
+            "gcsError": "GCS путь должен начинаться с gs://",
+            "abfssError": "ABFSS путь должен начинаться с abfss://"
+        }
+    },
+    "FileState": {
+        "Download": "Download",
+        "Upload": "Upload",
+        "Loading": "Loading"
+    },
+    "Dataframe": {
+        "modal": {
+            "title": "Dataframe"
+        },
+        "toolbar": {
+            "addColumn": "column",
+            "addRow": "row",
+            "remove": "Remove",
+            "columns": "Columns"
+        },
+        "columnMenu": {
+            "unsort": "Unsort",
+            "rename": "Rename",
+            "hide": "Hide",
+            "delete": "Delete"
+        },
+        "addColumn": {
+            "columnName": "Column Name",
+            "columnType": "Column Type",
+            "add": "Add",
+            "rename": "Rename"
+        },
+        "columns": {
+            "findColumn": "Find Column",
+            "columnTitle": "Column Title",
+            "showAll": "Show all",
+            "hideAll": "Hide all"
+        }
+    },
+    "Validate": {
+        "isError": "Fail job on validation error",
+        "modal": {
+            "addValidation": "Add Validation",
+            "editValidation": "Edit Validation"
+        },
+        "toolbar": {
+            "column": "column"
+        },
+        "columnMenu": {
+            "rename": "Rename",
+            "delete": "Delete"
+        },
+        "header": {
+            "type": "TYPE",
+            "parameter": "PARAMETER"
+        },
+        "popupMenu": {
+            "columnName": "Column Name",
+            "ok": "Ok",
+            "type": "Type",
+            "values": "Values"
+        }
+    },
+    "stagePopupMenu": {
+        "editStage": "Редактировать stage",
+        "copyStage": "Копировать stage",
+        "deleteStage": "Удалить stage",
+        "pasteStage": "Вставить stage",
+        "deleteConnection": "Удалить подключение"
+    },
+    "Cluster": {
+        "modal": {
+            "title": "Рабочий кластер",
+            "clusterName": "Имя кластера",
+            "multiNode": "Несколько узлов",
+            "singleNode": "Один узел",
+            "policy": "Политика",
+            "accessMode": "Уровень доступа",
+            "performance": "Производительность",
+            "databricksRuntimeVersion": "Версия Databrick во время исполнения",
+            "usePhotonAcceleration": "Использовать ускорение фотонов",
+            "workerType": "Тип рабочего",
+            "workers": "Рабочик",
+            "minWorkers": "Минимум рабочих",
+            "maxWorkers": "Мксимум рабочих",
+            "driverType": "Тип драйвера",
+            "nodeType": "Тип узла",
+            "autoscalingWorkers": "Включить автомасштабирование",
+            "autoscalingStorage": "Включить автомасштабирование локального хранилища",
+            "instanceProfile": "Профиль экземпляра",
+            "tags": "Тэги",
+            "onDemandSpot": "Сначала по запросу, затем {{number}} Spot",
+            "isOnDemandSpot": "Spot возвращается к режиму «По требованию»",
+            "iamRole": "IAM передача ролей",
+            "enableCredential": "Включить передачу учетных данных для доступа к данным на уровне пользователя",
+            "availabilityZone": "Зона доступности",
+            "maxSpotPrice": "Максимальная цена Spot",
+            "demandPrice": "% цены экземпляра по требованию",
+            "ebsVolumeType": "EBS тип тома",
+            "volumes": "# Томов",
+            "dbSize": "Объем в ГБ",
+            "ebsNone": "По умолчанию будет использоваться локальное хранилище экземпляра и тома EBS, предоставленные Databricks.",
+            "ebsSsdHdd": "{{number}} ГБ дополнительно на каждый узел",
+            "sparkConfig": "Spark конфигурация",
+            "sparkConfigPlaceholder": "Введите свои варианты Spark конфигурации здесь. Укажите только одну пару ключ-значение в каждой строке.\nExample:\nspark.sql.ansi.enabled true\nspark.sql.files.maxPartitionBytes 134217728",
+            "envVar": "Переменные окружения",
+            "destination": "Назначение",
+            "logPath": "Вычислить путь логов",
+            "region": "Регион",
+            "sshPublicKey": "SSH публичный ключ",
+            "sshPlaceholder": "ssh-rsa <public_key> email@example.com",
+            "preemptibleInstances": "Preemptible instances",
+            "googleServiceAccount": "Google Service Account",
+            "localSSDs": "# local SSDs",
+            "ssdSize": "Each local SSD is {{number}}GB in size",
+            "spotInstance": "Spot Instance"
+        }
+    }
+}

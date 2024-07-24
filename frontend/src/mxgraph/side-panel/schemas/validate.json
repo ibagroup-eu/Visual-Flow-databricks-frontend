@@ -1,0 +1,10 @@
+{
+  "VALIDATE": [
+    {
+      "field": "validateConfig"
+    },
+    {
+      "field": "isError"
+    }
+  ]
+}
