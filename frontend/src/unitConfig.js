@@ -48,9 +48,9 @@ const UnitConfig = {
         STAGES: {
             JOB: true,
             PIPELINE: true,
-            CONTAINER: window.PLATFORM !== DATABRICKS ? true : false,
-            NOTIFICATION: window.PLATFORM !== DATABRICKS ? true : false,
-            WAIT: window.PLATFORM !== DATABRICKS ? true : false
+            CONTAINER: window.PLATFORM !== DATABRICKS,
+            NOTIFICATION: window.PLATFORM !== DATABRICKS,
+            WAIT: window.PLATFORM !== DATABRICKS
         },
         HISTORY: true
     }

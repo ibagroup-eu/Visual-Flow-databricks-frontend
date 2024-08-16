@@ -54,7 +54,9 @@ describe('Project Validations', () => {
     });
 
     it('should return true for isCorrectHost', () => {
-        expect(isCorrectHost('https://vk.com')).toBeTruthy();
+        expect(
+            isCorrectHost('https://adb-908482742969127.7.azuredatabricks.net')
+        ).toBeTruthy();
     });
 
     it('should return false for isCorrectHost', () => {

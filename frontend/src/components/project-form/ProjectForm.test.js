@@ -209,7 +209,7 @@ describe('ProjectForm', () => {
                 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna.
                 Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.`,
                     host: 'https',
-                    token: 1,
+                    personalAccessToken: 1,
                     pathToFile: 'dbfs'
                 }
             },
@@ -229,7 +229,7 @@ describe('ProjectForm', () => {
                     name: 'name',
                     description: '',
                     host: 'https://ololo.com:8080',
-                    token: 'safkahfsdfkhsvjhgckjvsdlkfekju',
+                    personalAccessToken: 'safkahfsdfkhsvjhgckjvsdlkfekju',
                     pathToFile: 'dbfs:/ololo',
                     editable: true
                 }

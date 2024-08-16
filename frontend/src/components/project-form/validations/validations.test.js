@@ -141,7 +141,12 @@ describe('Project Validations', () => {
         expect(
             isDatabricksValidationPassed({
                 host: 'a',
-                token: 't',
+                authentication: {
+                    token: 't',
+                    clientId: 'clientId',
+                    secret: 'secret',
+                    authenticationType: 'PAT'
+                },
                 pathToFile: 'a'
             })
         ).toBeFalsy();
@@ -150,9 +155,14 @@ describe('Project Validations', () => {
     it('should return true for isDatabricksValidationPassed', () => {
         expect(
             isDatabricksValidationPassed({
-                host: 'https://vk.com:228',
-                token: 'token',
-                pathToFile: '/Volumes/catalog/schema/volume/path'
+                host: 'https://adb-908482742969127.7.azuredatabricks.net',
+                authentication: {
+                    token: 'token',
+                    clientId: 'clientId',
+                    secret: 'secret',
+                    authenticationType: 'PAT'
+                },
+                pathToFile: '/Volumes/sales/dims/jars/vf240729'
             })
         ).toBeTruthy();
     });

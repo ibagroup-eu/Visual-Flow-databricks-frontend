@@ -46,11 +46,27 @@ export const isCorrectPath = value =>
         /^\/Volumes\/(?:[A-Za-z0-9\-_]+\/){2,3}[A-Za-z0-9\-_]+$/.test(value)) ||
     value.length === 0;
 
-export const isValidDatabricksParams = ({ host, token, pathToFile }) => {
+export const isValidDatabricksParams = ({
+    host,
+    token,
+    clientId,
+    secret,
+    authenticationType,
+    pathToFile
+}) => {
     const fullValidHost = host && isCorrectHost(host);
 
     const fullValidToken = token && isCorrectName(token);
 
     const fullValidPath = pathToFile && isCorrectPath(pathToFile);
-    return fullValidHost && fullValidToken && fullValidPath;
+
+    if (authenticationType === 'OAUTH') {
+        return fullValidHost && clientId && secret && fullValidPath;
+    }
+
+    if (authenticationType === 'PAT') {
+        return fullValidHost && fullValidToken && fullValidPath;
+    }
+
+    return false;
 };

@@ -70,7 +70,18 @@ export const isLimitsAndDemoLimitsValidationsPassed = ({
     isValidationPassed({ name, description, limits }) &&
     (demo ? isValidationDemoLimitsPassed(demoLimits) : true);
 
-export const isDatabricksValidationPassed = ({ host, token, pathToFile }) =>
+export const isDatabricksValidationPassed = ({
+    host,
+    authentication: { token, clientId, secret, authenticationType },
+    pathToFile
+}) =>
     window.PLATFORM === DATABRICKS
-        ? isValidDatabricksParams({ host, token, pathToFile })
+        ? isValidDatabricksParams({
+              host,
+              token,
+              clientId,
+              secret,
+              authenticationType,
+              pathToFile
+          })
         : true;

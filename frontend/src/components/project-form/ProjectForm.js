@@ -36,7 +36,6 @@ import FormWrapper from '../form-wrapper';
 import useStyles from './ProjectForm.Styles';
 import LimitsField from './limits';
 import LimitSubtitle from './limit-subtitle';
-import PasswordInput from '../password-input';
 import {
     isDatabricksValidationPassed,
     isEmpty,
@@ -46,21 +45,7 @@ import useUnsavedChangesWarning from '../../pages/settings/useUnsavedChangesWarn
 import toggleConfirmationWindow from '../../redux/actions/modalsActions';
 import DemoLimits from './demo-limits/DemoLimits';
 import { AWS, AZURE, DATABRICKS, GCP } from '../../mxgraph/constants';
-
-const clouds = [
-    {
-        value: 'AWS',
-        label: 'AWS'
-    },
-    {
-        value: 'Azure',
-        label: 'Azure'
-    },
-    {
-        value: 'GCP',
-        label: 'GCP'
-    }
-];
+import Authentication from './authentication';
 
 // eslint-disable-next-line complexity
 export const ProjectForm = ({ project, create, update, confirmationWindow }) => {
@@ -94,7 +79,16 @@ export const ProjectForm = ({ project, create, update, confirmationWindow }) => 
         editable: get(project, 'editable'),
         cloud: get(project, 'cloud', 'AWS'),
         host: get(project, 'host', ''),
-        token: get(project, 'token', ''),
+        authentication: {
+            token: get(project, 'authentication.token', ''),
+            clientId: get(project, 'authentication.clientId', ''),
+            secret: get(project, 'authentication.secret', ''),
+            authenticationType: get(
+                project,
+                'authentication.authenticationType',
+                'OAUTH'
+            )
+        },
         pathToFile: get(project, 'pathToFile', '')
     };
 
@@ -274,23 +268,13 @@ export const ProjectForm = ({ project, create, update, confirmationWindow }) => 
                                 error={!isValid(card.host)}
                             />
                         </Grid>
-                        <Grid item xs={12}>
-                            <PasswordInput
-                                value={card.token}
-                                disabled={project && !editMode}
-                                required
-                                id="token"
-                                label={t('main:form.Token')}
-                                fullWidth
-                                onChange={handleChange}
-                                helperText={
-                                    !isCorrectName(card.token) &&
-                                    t('main:validation.3to40chars')
-                                }
-                                error={!isCorrectName(card.token)}
-                                isTouched
-                            />
-                        </Grid>
+                        <Authentication
+                            project={project}
+                            card={card}
+                            setCardState={setCardState}
+                            editMode={editMode}
+                            setDirty={setDirty}
+                        />
                         <Grid item xs={12}>
                             <TextField
                                 value={card.pathToFile}
