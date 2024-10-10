@@ -71,17 +71,17 @@ describe('Project Validations', () => {
         expect(isCorrectPath('/Volumes/catalog/schema/volume_path')).toBeTruthy();
     });
 
+    it('should return true for isCorrectPath 3', () => {
+        expect(
+            isCorrectPath('/Volumes/catalog/schema1/schema2/schema3/volume_path')
+        ).toBeTruthy();
+    });
+
     it('should return false for isCorrectPath 1', () => {
         expect(isCorrectPath('ololo')).toBeFalsy();
     });
 
     it('should return false for isCorrectPath 2', () => {
-        expect(
-            isCorrectPath('/Volumes/catalog/schema/volume/path/path')
-        ).toBeFalsy();
-    });
-
-    it('should return false for isCorrectPath 3', () => {
         expect(isCorrectPath('/Volumes/catalog/schema')).toBeFalsy();
     });
 });

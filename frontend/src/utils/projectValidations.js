@@ -42,8 +42,7 @@ export const isCorrectHost = value =>
     ) || value.length === 0;
 
 export const isCorrectPath = value =>
-    (value &&
-        /^\/Volumes\/(?:[A-Za-z0-9\-_]+\/){2,3}[A-Za-z0-9\-_]+$/.test(value)) ||
+    (value && /^\/Volumes\/(?:[A-Za-z0-9\-_]+\/){2,}[A-Za-z0-9\-_]+$/.test(value)) ||
     value.length === 0;
 
 export const isValidDatabricksParams = ({

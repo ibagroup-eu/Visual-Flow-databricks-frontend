@@ -32,6 +32,7 @@ import logsReducer from './logsReducer';
 import modalsReducer from './modalsReducer';
 import mxGraphReducer from './mxGraphReducer';
 import settingsUsersRolesReducer from './settingsUsersRolesReducer';
+import currentUserReducer from './currentUserReducer';
 import usersReducer from './usersReducer';
 import rolesReducer from './rolesReducer';
 import oneJobStatusReducer from './oneJobStatusReducer';
@@ -70,6 +71,7 @@ const combine = combineReducers({
         history: historyReducer
     }),
     user: combineReducers({
+        currentUser: currentUserReducer,
         users: usersReducer,
         roles: rolesReducer,
         profile: profileReducer

@@ -19,7 +19,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox, FormControlLabel, Grid, TextField } from '@material-ui/core';
+import { Switch, FormControlLabel, Grid, TextField } from '@material-ui/core';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { useTranslation } from 'react-i18next';
 import LimitsField from '../limits';
@@ -84,11 +84,11 @@ export const DemoLimits = ({ project, card, setCardState, editMode, setDirty }) 
         setDirty();
     };
 
-    const handleChangeCheckbox = event => {
+    const handleChangeToggle = event => {
         event.persist();
         setCardState(prevState => ({
             ...prevState,
-            [event.target.id]: event.target.checked
+            [event.target.name]: event.target.checked
         }));
         setDirty();
     };
@@ -100,10 +100,11 @@ export const DemoLimits = ({ project, card, setCardState, editMode, setDirty }) 
                     <FormControlLabel
                         className={classes.divider}
                         control={
-                            <Checkbox
+                            <Switch
                                 id="demo"
-                                onChange={handleChangeCheckbox}
+                                onChange={handleChangeToggle}
                                 checked={card.demo}
+                                name="demo"
                                 disabled={!editMode}
                             />
                         }

@@ -18,29 +18,27 @@
  */
 
 import {
-    FETCH_USERS_START,
-    FETCH_USERS_SUCCESS,
-    FETCH_USERS_FAIL
+    FETCH_CURRENT_USER_START,
+    FETCH_CURRENT_USER_SUCCESS,
+    FETCH_CURRENT_USER_FAIL
 } from './types';
 import userApi from '../../api/users';
 
-const fetchUsers = () => dispatch => {
+export const fetchCurrentUser = () => dispatch => {
     dispatch({
-        type: FETCH_USERS_START
+        type: FETCH_CURRENT_USER_START
     });
 
-    return userApi.getUsers().then(
+    return userApi.getCurrentUser().then(
         response =>
             dispatch({
-                type: FETCH_USERS_SUCCESS,
+                type: FETCH_CURRENT_USER_SUCCESS,
                 payload: response.data
             }),
         error =>
             dispatch({
-                type: FETCH_USERS_FAIL,
+                type: FETCH_CURRENT_USER_FAIL,
                 payload: { error }
             })
     );
 };
-
-export default fetchUsers;

@@ -18,29 +18,28 @@
  */
 
 import {
-    FETCH_USERS_START,
-    FETCH_USERS_SUCCESS,
-    FETCH_USERS_FAIL
-} from './types';
-import userApi from '../../api/users';
+    FETCH_CURRENT_USER_START,
+    FETCH_CURRENT_USER_SUCCESS,
+    FETCH_CURRENT_USER_FAIL
+} from '../actions/types';
 
-const fetchUsers = () => dispatch => {
-    dispatch({
-        type: FETCH_USERS_START
-    });
-
-    return userApi.getUsers().then(
-        response =>
-            dispatch({
-                type: FETCH_USERS_SUCCESS,
-                payload: response.data
-            }),
-        error =>
-            dispatch({
-                type: FETCH_USERS_FAIL,
-                payload: { error }
-            })
-    );
+const initialState = {
+    loading: false,
+    data: {},
+    error: null
 };
 
-export default fetchUsers;
+const currentUserReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case FETCH_CURRENT_USER_START:
+            return { ...state, loading: true, error: null };
+        case FETCH_CURRENT_USER_SUCCESS:
+            return { ...state, loading: false, data: action.payload };
+        case FETCH_CURRENT_USER_FAIL:
+            return { ...state, loading: false, error: action.payload.error };
+        default:
+            return state;
+    }
+};
+
+export default currentUserReducer;

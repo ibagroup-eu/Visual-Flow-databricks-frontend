@@ -93,16 +93,16 @@ const SingleSelectModal = ({
             return '';
         }
 
-        if (item[orderBy] instanceof Date) {
+        if (orderBy === 'lastRun' || orderBy === 'lastModified') {
+            if (!item[orderBy]) {
+                return t('filters:N/A');
+            }
             return moment(item[orderBy], DATE_FORMAT_UTC).format(DATE_FORMAT_UTC);
         }
 
-        if (!item[orderBy]) {
-            return t('filters:N/A');
-        }
-
-        return item[orderBy];
+        return item[orderBy] ? item[orderBy].toString() : t('filters:N/A');
     };
+
 
     const handleChangeSearch = value => {
         const filteredItems = filterItemsByName(items, value);

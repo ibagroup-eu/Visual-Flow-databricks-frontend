@@ -79,14 +79,6 @@ const ClickHouseStorage = ({
                                 onChange={handleInputChange}
                                 storage="clickHouse"
                             />
-                            <ReadTextFields
-                                ableToEdit={ableToEdit}
-                                fields={customSqlFields[0]}
-                                inputValues={inputValues}
-                                handleInputChange={handleInputChange}
-                                openModal={openModal}
-                                required
-                            />
                         </>
                     ) : (
                         <ParamsSwitchField
